@@ -1,0 +1,89 @@
+body {
+  font-family: "Segoe UI";
+  background-color: #232834;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Form */
+input,
+button {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  margin: 10px;
+  color: white;
+  border-radius: 3px;
+}
+#tweet-input {
+  width: 70%;
+}
+
+button {
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+button:hover {
+  color: #232834;
+  background-color: #ddd;
+}
+
+/* Tweet */
+.tweet-container {
+  max-width: 50%;
+  margin: 50px auto 0;
+  display: none;
+}
+
+.tweet {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  background: -webkit-linear-gradient(96deg, #ffffff 0%, #eeeeee 100%);
+  background: linear-gradient(96deg, #ffffff 0%, #eeeeee 100%);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.tweet-content {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin: 10px 0;
+}
+
+.tweet .profile {
+  background-color: #ddd;
+  height: 40px;
+  width: 40px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  font-family: "Arial";
+}
+.tweet .username {
+  display: inline-block;
+  margin-left: 15px;
+  font-weight: 600;
+}
+
+.tweet .tweet-text {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.tweet .date{
+  color: #888;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
